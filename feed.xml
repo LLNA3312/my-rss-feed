@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>LLNA3312 Aggregated Feed</title>
+    <link>https://LLNA3312.github.io/my-rss-feed/</link>
+    <description>Aggregated audio feed for YouTube channels and podcast RSS feeds.</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 07 Sep 2025 03:24:11 +0000</lastBuildDate>
+    <item>
+      <title>【先祖の探し方】ここ数年で革命的にラクに／究極の自分探し／戸籍の広域交付制度とは／国会図書館デジタルコレクションの凄さ／戸籍の読み方／費用は1万円以下／覚悟が必要／古文書から探る／家系図作成法</title>
+      <link>https://www.youtube.com/watch?v=_jIt_4NDj8w</link>
+      <guid isPermaLink="false">8c7459694530840edf0e5cfca115ef10ffdc51f3</guid>
+      <enclosure url="https://raw.githubusercontent.com/LLNA3312/my-rss-feed/main/youtube_audio/pivot00/_jIt_4NDj8w.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Sep 2025 12:24:45 +0900</pubDate>
+    </item>
+    <item>
+      <title>【フランスの現在地】分断した議会と政治危機／内閣信任投票の行方／行き詰まるマクロン政権／金融市場の動揺／フランスの政治／極右の動向とユーロへの影響／第一生命経済研究所・田中理氏【PIVOT TALK】</title>
+      <link>https://www.youtube.com/watch?v=PwCpekn9foA</link>
+      <guid isPermaLink="false">6bb12e16b5a5f4e9b2a788bda3acb21f4cec4fc7</guid>
+      <enclosure url="https://raw.githubusercontent.com/LLNA3312/my-rss-feed/main/youtube_audio/pivot00/PwCpekn9foA.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Sep 2025 12:24:46 +0900</pubDate>
+    </item>
+    <item>
+      <title>【DIGEST】日本株は覚醒する。“失われた30年”を越えた成長の3ステップ／ 投資家が視る 「日本株」新時代／企業変革の最前線を徹底解説</title>
+      <link>https://www.youtube.com/watch?v=5wXc8qDhnAw</link>
+      <guid isPermaLink="false">7811676b7a9626467df88ca47bb05455428be0ad</guid>
+      <enclosure url="https://raw.githubusercontent.com/LLNA3312/my-rss-feed/main/youtube_audio/pivot00/5wXc8qDhnAw.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Sep 2025 12:24:47 +0900</pubDate>
+    </item>
+    <item>
+      <title>【田中渓５つの掟】元ゴールドマンサックスの仕事術と習慣／午前3時45分から密着／凡人から夢を実現／効率が上がるAI活用法／昼食は玄米と生卵／YouTube出演は嫌だった【MY LAWS】</title>
+      <link>https://www.youtube.com/watch?v=pv_ytEic2Ls</link>
+      <guid isPermaLink="false">5746e7f1217f87049c836ae59def08f0cbd2de88</guid>
+      <enclosure url="https://raw.githubusercontent.com/LLNA3312/my-rss-feed/main/youtube_audio/pivot00/pv_ytEic2Ls.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Sep 2025 12:24:48 +0900</pubDate>
+    </item>
+    <item>
+      <title>【脱炭素の切り札は“デカボ”】UCCからガンバ大阪までデカボ／博報堂×三井物産の勝ち筋／生活者の欲望を刺激／生活者×脱炭素は日本と相性抜群</title>
+      <link>https://www.youtube.com/watch?v=DsWwYHf3SMk</link>
+      <guid isPermaLink="false">05f60b8da1ffe1e63ade9bf666b858020e3e68dd</guid>
+      <enclosure url="https://raw.githubusercontent.com/LLNA3312/my-rss-feed/main/youtube_audio/pivot00/DsWwYHf3SMk.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Sep 2025 12:24:49 +0900</pubDate>
+    </item>
+    <item>
+      <title>【脳科学が明かす人間の未来】SFの世界は実現するか／サイボーグになる意味／脳の電子データ化の実現性／AIが心を持つには？／人口冬眠のメリットと宇宙旅行／脳に潜在能力はあるのか【PIVOT TALK】</title>
+      <link>https://www.youtube.com/watch?v=hHuwRbJPTrU</link>
+      <guid isPermaLink="false">5b36a1dc09ed186248bd7d8d45230d1452876c94</guid>
+      <enclosure url="https://raw.githubusercontent.com/LLNA3312/my-rss-feed/main/youtube_audio/pivot00/hHuwRbJPTrU.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Sep 2025 12:24:50 +0900</pubDate>
+    </item>
+    <item>
+      <title>【中国人の不動産爆買いは続くのか】不動産は化け物／東京は30年前の香港／逃資目的の東京買い／セカンドハウスの実需／香港ではタワマンは庶民用／大富豪は山頂の豪邸／無税で引き継げる／健康な不動産は東京だけ</title>
+      <link>https://www.youtube.com/watch?v=MhOj1rBqZbA</link>
+      <guid isPermaLink="false">a2d9c49b99297d80471086c4259b2f8a623e3ed6</guid>
+      <enclosure url="https://raw.githubusercontent.com/LLNA3312/my-rss-feed/main/youtube_audio/pivot00/MhOj1rBqZbA.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Sep 2025 12:24:51 +0900</pubDate>
+    </item>
+    <item>
+      <title>【中国経済の三重苦】柯隆×峯村健司／多発する凶悪犯罪と社会不安の高まり／中国が恐れるトランプの切り札とは／米中貿易戦争、中国有利は本当か？／不動産バブル崩壊でゴーストタウンが急増【政策超分析】</title>
+      <link>https://www.youtube.com/watch?v=FxRLGdJLqxk</link>
+      <guid isPermaLink="false">74965bed802ba2ac75f61e174c87e12337436aa6</guid>
+      <enclosure url="https://raw.githubusercontent.com/LLNA3312/my-rss-feed/main/youtube_audio/pivot00/FxRLGdJLqxk.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Sep 2025 12:24:52 +0900</pubDate>
+    </item>
+    <item>
+      <title>【密着1か月 英語学習のリアル】高効率 × 最短の学習法／挫折しない／劇的スコアアップ／英語コーチング／イングリード／泣きっ面のMC西川が激変</title>
+      <link>https://www.youtube.com/watch?v=X4OK0ZZ6RgA</link>
+      <guid isPermaLink="false">02f27437426489fda4883f3e058c5ecf6ca1dd1c</guid>
+      <enclosure url="https://raw.githubusercontent.com/LLNA3312/my-rss-feed/main/youtube_audio/pivot00/X4OK0ZZ6RgA.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Sep 2025 12:24:53 +0900</pubDate>
+    </item>
+    <item>
+      <title>【若者恐怖症】データで読み解く“3大恐怖”──飲み会離れ・離職・ハラスメントは本当に増えているのか？経営学者・舟津昌平氏が語る／よくわかないから怖い若者／データを知り乗り越える【PIVOT TALK】</title>
+      <link>https://www.youtube.com/watch?v=s8zIggbxqJ4</link>
+      <guid isPermaLink="false">d8023a661886bcf25518a95ebb089291e7e42e7b</guid>
+      <enclosure url="https://raw.githubusercontent.com/LLNA3312/my-rss-feed/main/youtube_audio/pivot00/s8zIggbxqJ4.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Sep 2025 12:24:55 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
