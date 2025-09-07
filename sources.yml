@@ -19,7 +19,7 @@ max_videos_per_channel: 3
 # URLs with your own. Each feed must expose audio enclosures in its
 # items for them to be picked up.
 podcasts:
-  - "https://feeds.simplecast.com/54nAGcIl"
+  #- "https://feeds.simplecast.com/54nAGcIl"
   # - "https://another.example.com/podcast/rss"
 
 # List of YouTube channels to process. Each entry requires a `url`
@@ -29,5 +29,5 @@ podcasts:
 # The downloaded audio will be saved under a folder derived from the
 # channel ID and included as enclosures in the generated feed.xml.
 youtube_channels:
-  - url: "https://www.youtube.com/@PivotPOD"  # replace with actual channel URL
-    max_videos: 3
+  - url: "https://www.youtube.com/@pivot00"  # replace with actual channel URL
+    max_videos: 15
