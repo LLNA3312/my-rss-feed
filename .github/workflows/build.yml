@@ -3,14 +3,16 @@ name: Build Aggregated RSS
 on:
   workflow_dispatch: {}
   schedule:
-    # Runs every hour on the hour. Adjust as needed (UTC time).
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"   # 每小时跑一次（UTC）
   push:
-    # Rebuild feed when these files change
     paths:
       - sources.yml
       - merge_feeds.py
       - .github/workflows/build.yml
+
+# 允许 workflow 往仓库写入（push）
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -18,6 +20,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,19 +38,23 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser feedgen pyyaml pytz yt_dlp
+          pip install feedparser feedgen pyyaml pytz yt-dlp
 
       - name: Generate feed.xml and download YouTube audio
         run: |
+          set -euxo pipefail
+          echo "===== sources.yml ====="
+          cat sources.yml
           python merge_feeds.py
+          echo "===== outputs ====="
+          ls -lah
+          if [ -d youtube_audio ]; then find youtube_audio -maxdepth 2 -type f -name '*.mp3' -ls; fi
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Add generated feed and downloaded audio/archive files
-          git add feed.xml youtube_audio .cache || true
-          # Only commit if there are changes
+          git add -A feed.xml youtube_audio .cache || true
           if ! git diff --cached --quiet; then
             git commit -m "chore: update feed and audio files" || true
             git push

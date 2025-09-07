@@ -30,4 +30,4 @@ podcasts:
 # channel ID and included as enclosures in the generated feed.xml.
 youtube_channels:
   - url: "https://www.youtube.com/@pivot00"  # replace with actual channel URL
-    max_videos: 15
+    max_videos: 3
