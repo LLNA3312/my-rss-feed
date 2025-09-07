@@ -1,0 +1,51 @@
+name: Build Aggregated RSS
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # Runs every hour on the hour. Adjust as needed (UTC time).
+    - cron: "0 * * * *"
+  push:
+    # Rebuild feed when these files change
+    paths:
+      - sources.yml
+      - merge_feeds.py
+      - .github/workflows/build.yml
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ffmpeg
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser feedgen pyyaml pytz yt_dlp
+
+      - name: Generate feed.xml and download YouTube audio
+        run: |
+          python merge_feeds.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Add generated feed and downloaded audio/archive files
+          git add feed.xml youtube_audio .cache || true
+          # Only commit if there are changes
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update feed and audio files" || true
+            git push
+          fi

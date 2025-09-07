@@ -1,0 +1,33 @@
+title: "LLNA3312 Aggregated Feed"
+link: "https://LLNA3312.github.io/my-rss-feed/"
+description: "Aggregated audio feed for YouTube channels and podcast RSS feeds."
+
+# The timezone used when formatting publication dates.
+timezone: "Asia/Tokyo"
+
+# Maximum number of items to include in the final feed.
+max_total_items: 100
+
+# Maximum number of items to pull from any single source (podcast or YouTube).
+max_items_per_source: 10
+
+# Default maximum number of videos to download per YouTube channel. You can
+# override this per-channel by specifying `max_videos` on a channel entry.
+max_videos_per_channel: 3
+
+# List of external podcast RSS feeds to include. Replace these example
+# URLs with your own. Each feed must expose audio enclosures in its
+# items for them to be picked up.
+podcasts:
+  - "https://feeds.simplecast.com/54nAGcIl"
+  # - "https://another.example.com/podcast/rss"
+
+# List of YouTube channels to process. Each entry requires a `url`
+# which can be a channel URL (e.g. https://www.youtube.com/channel/CHANNEL_ID)
+# or a handle (e.g. https://www.youtube.com/@channelname). Optional keys:
+#   `max_videos` – override the global max_videos_per_channel for this channel.
+# The downloaded audio will be saved under a folder derived from the
+# channel ID and included as enclosures in the generated feed.xml.
+youtube_channels:
+  - url: "https://www.youtube.com/@PivotPOD"  # replace with actual channel URL
+    max_videos: 3
